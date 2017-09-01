@@ -51,6 +51,12 @@ public class LongestPalindrome {
 		
 		SuffixTree st = root;
 		for (char ch : subString.toCharArray()) {
+			st = new SuffixTree();
+			if (ch <= 'Z') {
+				st.st[ch -'A'] = st;
+			} else {
+				st.st[ch - 'a'] = st;
+			}
 		}
 	}
 
