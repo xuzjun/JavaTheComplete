@@ -13,7 +13,7 @@ package leetcode;
  * 
  * Input:
  * "abccccdd"
- * 
+ *  
  * Output:
  * 7
  * 
