@@ -1,16 +1,30 @@
 package leetcode;
 
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Test {
 
 	public static void main(String[] args) {
-		String s = "sdk";
+		Integer[] ai = new Integer[]{2, 4, 1, 0, 9};
 		
-		String sq = s.substring(3);
+		Arrays.sort(ai, new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer a, Integer b) {
+				// TODO Auto-generated method stub
+				return b - a;
+			}
+		});
 		
-		if (sq == null)
-			System.out.println("sq is null");
-		System.out.println(sq);
+		Arrays.sort(ai, new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+		});
 	}
 
 }
